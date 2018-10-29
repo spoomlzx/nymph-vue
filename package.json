@@ -9,29 +9,20 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.4.9",
+    "nprogress": "^0.2.0",
+    "tiny-cookie": "^2.1.2",
     "vue": "^2.5.17",
-    "vue-cookie": "^1.1.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-service": "^3.0.5",
     "babel-plugin-component": "^1.1.1",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
     "vue-cli-plugin-element": "^1.0.0",
     "vue-template-compiler": "^2.5.17"
   },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "babel": {
     "plugins": [
       [
@@ -42,5 +33,15 @@
         }
       ]
     ]
-  }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

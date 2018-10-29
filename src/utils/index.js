@@ -1,7 +1,3 @@
-import Vue from 'vue'
-import router from '@/router'
-import store from '@/store'
-
 /**
  * 获取uuid
  */
@@ -46,13 +42,4 @@ export function treeDataTranslate(data, id = 'id', pid = 'parentId') {
     }
   }
   return res
-}
-
-/**
- * 清除登录信息
- */
-export function clearLoginInfo() {
-  Vue.cookie.delete('token');
-  store.commit('resetStore');
-  router.options.isAddDynamicMenuRoutes = false
 }

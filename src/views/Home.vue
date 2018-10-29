@@ -2,6 +2,10 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-link to="/about">
+      about
+    </router-link>
+    <h2>{{$store.getters}}</h2>
   </div>
 </template>
 
