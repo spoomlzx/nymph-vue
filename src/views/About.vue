@@ -5,5 +5,9 @@
             about
         </router-link>
         <h2>{{$store.getters.token}}</h2>
+        <div class="icon-item">
+            <svg-icon icon-class="drag"/>
+            <span>adsf</span>
+        </div>
     </div>
 </template>
