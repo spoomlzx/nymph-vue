@@ -5,6 +5,7 @@ const user = {
   state: {
     token: getToken(),
     username: '',
+    avatar: '',
     email: '',
     mobile: '',
     status: ''
@@ -16,6 +17,9 @@ const user = {
     },
     SET_USERNAME: (state, username) => {
       state.username = username
+    },
+    SET_AVATAR: (state, avatar) => {
+      state.avatar = avatar
     },
     SET_EMAIL: (state, email) => {
       state.email = email
@@ -48,6 +52,7 @@ const user = {
       return new Promise((resolve, reject) => {
         getUserInfo(state.token).then(response => {
           commit('SET_USERNAME', response.user.username);
+          commit('SET_AVATAR', response.user.avatar);
           commit('SET_EMAIL', response.user.email);
           commit('SET_MOBILE', response.user.mobile);
           commit('SET_STATUS', response.user.status);

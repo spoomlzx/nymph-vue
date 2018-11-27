@@ -1,0 +1,62 @@
+$skin--orange   : #EB6709;
+
+/* Colors
+-------------------------- */
+$color--white: #fff;
+$color--black: #000;
+$color--primary        : $skin--orange;
+$color--primary-light-1: mix($color--white, $color--primary, 10%);
+$color--primary-light-2: mix($color--white, $color--primary, 20%);
+$color--primary-light-3: mix($color--white, $color--primary, 30%);
+$color--primary-light-4: mix($color--white, $color--primary, 40%);
+$color--primary-light-5: mix($color--white, $color--primary, 50%);
+$color--primary-light-6: mix($color--white, $color--primary, 60%);
+$color--primary-light-7: mix($color--white, $color--primary, 70%);
+$color--primary-light-8: mix($color--white, $color--primary, 80%);
+$color--primary-light-9: mix($color--white, $color--primary, 90%);
+$color--text-primary    : #303133;
+$color--text-regular    : #606266;
+$color--text-secondary  : #909399;
+$color--text-placeholder: #c0c4cc;
+
+
+
+/* Header
+------------------------------ */
+$header--zindex: 1030;
+$header--height: 50px;
+
+
+/* Aside
+------------------------------ */
+$aside--zindex: 1020;
+$aside--width: 230px;
+$aside--width-fold: 60px;
+$aside--menu-item-height: 40px;
+$aside--text-color-dark: #8a979e;
+$aside--background-color-dark: #263238;
+$aside--top-height: 42px;
+
+
+/* Control
+------------------------------ */
+$control--zindex: 1020;
+$control--width: 210px;
+
+
+/* Main
+------------------------------ */
+$main--zindex: 1010;
+$main--background-color: #f1f4f5;
+$main--tabs-tool-width: 42px;
+$main--tabs-header-height: 38px;
+$main--tabs-content-padding-x: 15px;
+$main--tabs-content-padding-y: 15px;
+$main--tabs-panel-padding-x: 15px;
+$main--tabs-panel-padding-y: 15px;
+
+
+/* Footer
+------------------------------ */
+$footer--zindex: 1010;
+$footer--height: 56px;
