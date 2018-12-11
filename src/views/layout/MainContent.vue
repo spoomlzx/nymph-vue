@@ -7,11 +7,11 @@
                                 v-if="item.name">{{item.name}}
             </el-breadcrumb-item>
         </el-breadcrumb>
-        <el-card class="main-content">
+        <div class="main-content" shadow="never">
             <keep-alive>
                 <router-view></router-view>
             </keep-alive>
-        </el-card>
+        </div>
     </div>
 </template>
 

@@ -48,15 +48,28 @@ export const constRouter = [
     children: [
       {
         path: '/file/list',
-        name: '列表',
+        name: '文件列表',
         icon: 'file-list',
         component: () => import('../views/file/List.vue')
       },
       {
         path: '/file/add',
-        name: '添加',
+        name: '添加文件',
         icon: 'add',
         component: () => import('../views/file/Add.vue')
+      },
+      {
+        path: '/file/edit/:id(\\d+)',
+        name: '编辑文件',
+        icon: 'edit',
+        component: () => import('../views/file/Edit.vue'),
+        hidden: true
+      },
+      {
+        path: '/file/detail',
+        name: '文件详情',
+        icon: 'file-detail',
+        component: () => import('../views/file/Detail.vue')
       }
     ]
   },

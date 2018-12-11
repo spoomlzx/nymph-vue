@@ -1,12 +1,12 @@
 <template>
-    <add-edit :is-edit="false"/>
+    <add-edit :is-edit="true"/>
 </template>
 
 <script>
   import AddEdit from './AddEdit'
 
   export default {
-    name: 'AddForm',
+    name: 'EditForm',
     components: { AddEdit }
   }
 </script>

@@ -1,11 +1,14 @@
 body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-family: Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     font-size: 14px;
     line-height: 1.15;
     text-align: left;
     color: #303133;
     background-color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .el-header {
@@ -13,7 +16,8 @@ body {
     color: #333;
     line-height: 50px;
 }
-.el-aside{
+
+.el-aside {
     .el-menu-item, .el-submenu__tile {
         height: 48px;
         line-height: 48px;
@@ -53,25 +57,70 @@ body {
 
 .el-menu.el-menu--horizontal {
     border-bottom: 0;
-    .el-menu-item, .el-submenu{
+
+    .el-menu-item, .el-submenu {
         height: 50px;
         line-height: 50px;
         background: transparent;
-        .submenu__title{
+
+        .submenu__title {
             height: 50px;
             line-height: 50px;
         }
     }
-    &> .el-submenu .el-submenu__title{
+
+    & > .el-submenu .el-submenu__title {
         height: 50px;
         line-height: 50px;
     }
 
-    & > .el-menu-item.is-active{
+    & > .el-menu-item.is-active {
         border-bottom: 0;
     }
 }
-.el-menu--horizontal .el-menu--popup{
+
+.el-menu--horizontal .el-menu--popup {
     min-width: 160px;
+}
+
+.el-card {
+    border: 0;
+}
+
+.el-upload-dragger {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 240px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    .el-icon-upload {
+        font-size: 24px;
+        color: #c0c4cc;
+        margin: 5px 10px;
+        line-height: 24px;
+    }
+}
+
+.el-rate {
+    height: 36px;
+    line-height: 36px;
+    .el-rate__item{
+        display:inline-block;
+    }
+    .el-rate__icon {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .el-rate__text{
+        font-size: 16px;
+        display:inline-block;
+        vertical-align: baseline;
+    }
 }
 

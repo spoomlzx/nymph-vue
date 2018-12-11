@@ -31,7 +31,7 @@
                     </template>
                     <el-menu-item index="2-1">个人中心</el-menu-item>
                     <el-menu-item index="2-2">修改密码</el-menu-item>
-                    <el-menu-item index="2-3">退出登录</el-menu-item>
+                    <el-menu-item index="2-3" @click="logout">退出登录</el-menu-item>
                 </el-submenu>
             </el-menu>
         </div>
@@ -47,6 +47,13 @@
         'username',
         'avatar'
       ])
+    },
+    methods: {
+      logout() {
+        this.$store.dispatch('LogOut').then(() => {
+          location.reload();
+        })
+      }
     }
   }
 </script>
@@ -64,7 +71,8 @@
     .header-right {
         .header-fold {
             float: left;
-            .el-menu-item{
+
+            .el-menu-item {
                 font-size: 18px;
                 color: #fff;
             }
